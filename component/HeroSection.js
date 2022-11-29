@@ -31,17 +31,19 @@ const HeroSection = () => {
           Never be caught unfresh at any moment, follow the ever evolving
           fashion and get the right sneakers today.
         </motion.p>
-        <motion.div
-          initial={{ y: "100vw" }}
-          animate={{ y: 0 }}
-          transition={{ delay: 1, duration: 3 }}
-          className={styles.btn}
-        >
-          <Link href="/products">
-            <LocalMallIcon style={{ fill: "#c55e20", fontSize: 15 }} />
-            SHOP NOW
-          </Link>
-        </motion.div>
+        <div>
+          <motion.div
+            initial={{ y: "100vw" }}
+            animate={{ y: 0 }}
+            transition={{ delay: 1, duration: 3 }}
+            className={styles.btn}
+          >
+            <Link href="/products">
+              <LocalMallIcon style={{ fill: "#c55e20", fontSize: 15 }} />
+              SHOP NOW
+            </Link>
+          </motion.div>
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,10 @@
     width: 100%;
     position: relative;
     overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .bg__img {
@@ -20,7 +24,7 @@
 }
 
 .textarea {
-    padding: 90px 50px;
+    margin-left: 50px;
 }
 
 .bold__text {
@@ -59,19 +63,9 @@
     padding: 15px 30px;
 }
 
-@media (min-width: 840px) {
-    .hero__container {
-        padding-bottom: 100px;
-    }
-}
-
 @media (max-width: 840px) {
 
     .textarea {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 5px;
+        margin-left: 10px;
     }
 }

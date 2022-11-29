@@ -1,8 +1,8 @@
 * {
   color: grey;
   scroll-behavior: smooth;
-  list-style: none;
-  text-decoration: none;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -16,10 +16,6 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .getProducts h1 {
