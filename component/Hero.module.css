@@ -67,5 +67,13 @@
 
     .textarea {
         margin-left: 10px;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:740px) {
+
+    .hero__container {
+        justify-content: flex-start;
     }
 }

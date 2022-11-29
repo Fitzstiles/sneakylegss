@@ -1,0 +1,30 @@
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: auto;
+    padding-top: 50px;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.timer__items {
+    background-color: #c4c3c8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.timer__items p {
+    color: black;
+    font-weight: 800;
+    width: 3ch;
+}
+
+.timer__items small {
+    color: black;
+}

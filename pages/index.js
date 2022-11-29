@@ -2,8 +2,6 @@ import Head from "next/head";
 import About from "../component/About";
 import Categories from "../component/Categories";
 import Featured from "../component/Featured";
-import Footer from "../component/Footer";
-import Header from "../component/Header";
 import HeroSection from "../component/HeroSection";
 
 export default function Home() {
@@ -15,13 +13,13 @@ export default function Home() {
         <link rel="icon" href="./public/images/icon.png" />
       </Head>
       <div>
-        <Header />
         <HeroSection />
         <About />
         <Categories />
         <Featured />
-        <Footer />
       </div>
     </div>
   );
 }
+
+// https://wallpaper.dog/large/17177044.jpg
