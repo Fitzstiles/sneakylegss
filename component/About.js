@@ -37,7 +37,7 @@ const About = () => {
               <CheckCircleIcon />
             </div>
           </div>
-          <h3>AUTHENCITY GUARANTEED</h3>
+          <h3>AUTHENTICITY GUARANTEED</h3>
           <div className="text">
             <p>Products sold at sneakylegs are 100% original.</p>
           </div>
