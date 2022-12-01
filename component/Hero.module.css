@@ -76,4 +76,9 @@
     .hero__container {
         justify-content: flex-start;
     }
+
+    .textarea p {
+        margin: 30px 0;
+    }
+
 }

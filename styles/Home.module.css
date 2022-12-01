@@ -75,69 +75,46 @@
 
 
 
-/* styling the product page */
 
-.product__container {
-  display: flex;
+/* styling the products details page */
+
+.details__container {
+  margin: 50px 0;
   color: black;
 }
 
-.productCard__wrapper {
-  border: 1px solid grey;
-  margin: 20px;
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  margin-top: 60px;
+.details__container a {
+  margin-left: 30px;
 }
 
-.productCard__image {
-  position: relative;
-  width: 300px;
-  height: 300px;
+.details__image {
+  width: 400px;
+  height: 400px;
+
 }
 
-.productCard__image img {
+.details__image img {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
   object-fit: cover;
 }
 
-
-.productCard__image p {
-  position: absolute;
-  bottom: 0;
-  left: 5px;
-  color: white;
-}
-
-.heart__icon {
-  position: absolute;
-  top: 20px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 30px;
-}
-
-.heart__icon svg {
-  font-size: 40px;
-}
-
-.product__container {
+.detailsItems__container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  gap: 20px;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 30px;
 }
 
-
-
-.productCard__wrapper h4 {
-  font-weight: 400;
+.details {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
 }
 
-.productCard__wrapper button {
-
+.right__container button {
   background-color: white;
   border: 1px solid #C55E20;
   color: #C55E20;
@@ -145,31 +122,56 @@
   padding: 5px 10px;
   cursor: pointer;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
 }
 
-.productCard__wrapper button:hover {
+.right__container button:hover {
   background-color: #C55E20;
   color: white;
 }
 
-.productCard__details {
-  margin-left: 10px;
+.details button svg {
+  font-size: 16px;
 }
 
-.productcard__name {
-  max-width: 150px;
-  height: 80px;
-}
-
-.rating {
+.free__shipping {
   display: flex;
-  padding: 20px 0;
+  gap: 20px;
+  margin-top: 30px;
 }
 
-@media (min-width:1012px) {
-  .productCard__image {
-    width: 300px;
-  }
+.free__shipping p {
+  display: flex;
+  align-items: center;
 }
 
-/* styling the product page ends */
+.free__shipping p svg {
+  color: #C55E20;
+}
+
+.final__section {
+  max-width: 60%;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.final__section p {
+  max-width: 450px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling the products details page ends*/

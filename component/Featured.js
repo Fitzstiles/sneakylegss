@@ -26,6 +26,7 @@ const Featured = () => {
           <p>
             PRICE: <strong>$20</strong>
           </p>
+
           <Link href="/"> BUY NOW</Link>
           <button>ADD TO CART</button>
         </div>

@@ -7,6 +7,7 @@ const products = [
     price: 600,
     gender: "m",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ const products = [
     price: 400,
     gender: "m",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const products = [
     price: 200,
     gender: "m",
     rating: 3,
+    description: "Beatuiful shoe",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ const products = [
     price: 100,
     gender: "m",
     rating: 2,
+    description: "Beatuiful shoe",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ const products = [
     price: 500,
     gender: "f",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const products = [
     price: 200,
     gender: "f",
     rating: 3,
+    description: "Beatuiful shoe",
   },
   {
     id: 7,
@@ -61,6 +67,7 @@ const products = [
     price: 200,
     gender: "m",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 8,
@@ -70,6 +77,7 @@ const products = [
     price: 500,
     gender: "f",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 9,
@@ -79,6 +87,7 @@ const products = [
     price: 200,
     gender: "f",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 10,
@@ -88,15 +97,17 @@ const products = [
     price: 600,
     gender: "f",
     rating: 3,
+    description: "Beatuiful shoe",
   },
   {
     id: 11,
-    name: "Tennis chunky sneaaker",
+    name: "Tennis chunky sneaker",
     image:
       "https://images-americanas.b2w.io/produtos/01/00/img/1589607/2/1589607218_1GG.jpg",
     price: 400,
     gender: "f",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 12,
@@ -105,6 +116,7 @@ const products = [
     price: 300,
     gender: "f",
     rating: 4,
+    description: "Beatuiful shoe",
   },
   {
     id: 13,
@@ -114,6 +126,7 @@ const products = [
     price: 400,
     gender: "m",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 14,
@@ -123,6 +136,7 @@ const products = [
     price: 600,
     gender: "m",
     rating: 4,
+    description: "Beatuiful shoe",
   },
   {
     id: 15,
@@ -132,6 +146,7 @@ const products = [
     price: 400,
     gender: "m",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 16,
@@ -141,6 +156,7 @@ const products = [
     price: 200,
     gender: "f",
     rating: 3,
+    description: "Beatuiful shoe",
   },
   {
     id: 17,
@@ -150,6 +166,7 @@ const products = [
     price: 400,
     gender: "f",
     rating: 5,
+    description: "Beatuiful shoe",
   },
   {
     id: 18,
@@ -159,6 +176,7 @@ const products = [
     price: 400,
     gender: "m",
     rating: 5,
+    description: "Beatuiful shoe",
   },
 ];
 export default products;

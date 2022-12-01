@@ -9,7 +9,7 @@
 
 .productCard__image {
     position: relative;
-    width: 300px;
+    width: 250px;
     height: 300px;
 }
 
@@ -54,7 +54,6 @@
 }
 
 .productCard__wrapper button {
-
     background-color: white;
     border: 1px solid #C55E20;
     color: #C55E20;
@@ -83,8 +82,9 @@
     padding: 20px 0;
 }
 
-/* @media (min-width:1012px) {
+
+@media (max-width:500px) {
     .productCard__image {
         width: 300px;
     }
-} */
+}
