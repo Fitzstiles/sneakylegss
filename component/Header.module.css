@@ -204,11 +204,12 @@
 
     .mobile__input {
         border-radius: 20px;
-        padding: 8px 10px;
+        padding: 4px 6px;
         background-color: #eeeeee;
         display: flex;
         border: 1px solid #c55e20;
         align-items: center;
+        width: 100%;
     }
 
     .mobile__input input {
@@ -220,6 +221,7 @@
 
     .mobile__cart {
         position: relative;
+        margin: 0 10px;
     }
 
     .mobile__cart svg {
@@ -238,13 +240,13 @@
     .mobile__view {
         display: flex;
         align-items: center;
-        max-width: 100%;
     }
 }
 
 @media screen and (min-width:740px) {
 
-    .mobile__view {
+    .mobile__input,
+    .mobile__cart {
         display: none;
     }
 }

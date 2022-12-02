@@ -19,17 +19,15 @@ const Header = () => {
           <small>sneakylegs</small>
         </div>
       </Link>
-      <div className={styles.mobile__view}>
         <div className={styles.mobile__input}>
           <input type="text" placeholder="Search" />
           <SearchIcon />
         </div>
-        <div className={styles.mobile__cart}>
+        
+      <div className={styles.mobile__cart}>
           <ShoppingCartOutlinedIcon />
           {cart >= 1 && <p>{cart}</p>}
         </div>
-      </div>
-
       <section
         className={`${styles.header__links} ${isOpen && styles.open}`}
         onClick={handleclosednav}
