@@ -9,10 +9,9 @@ import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
-import { width } from "@mui/system";
 const Details = () => {
   const router = useRouter();
-  const { id } = router.query;
+  const { id } = router?.query;
   const product = products.find((a) => a.id == id);
   const [liked, setLiked] = useState(false);
   const red = "purple";
@@ -87,12 +86,32 @@ const Details = () => {
             )}
           </div>
         </div>
+        <p>Select Shoe color</p>
         <div className={styles.select__color}>
           <div
-            style={{ backgroundColor: `${red}`, width: 20, height: 20 }}
+            style={{
+              backgroundColor: `${red}`,
+              width: 50,
+              height: 50,
+              borderRadius: "50%",
+            }}
           ></div>
-          <div></div>
-          <div></div>
+          <div
+            style={{
+              backgroundColor: `${red}`,
+              width: 50,
+              height: 50,
+              borderRadius: "50%",
+            }}
+          ></div>
+          <div
+            style={{
+              backgroundColor: `${red}`,
+              width: 50,
+              height: 50,
+              borderRadius: "50%",
+            }}
+          ></div>
         </div>
         <div className={styles.box}>
           <button>Description</button>
