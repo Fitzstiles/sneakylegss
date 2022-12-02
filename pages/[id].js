@@ -5,46 +5,33 @@ import products from "../DB";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-// import { useEffect, useState } from "react";
 
 const Details = () => {
   const router = useRouter();
   const { id } = router.query;
   const product = products.find((a) => a.id == id);
-  // const [windwoSize, setWindowsSize] = useState();
-
-  // useEffect(() => {
-  //   function handlewidowResize() {
-  //     setWindowsSize(resize);
-  //   }
-  //   window.addEventListener("resize", handlewidowResize);
-  //   return () => {
-  //     window.removeEventListener("resize", handlewidowResize);
-  //   };
-  // }, []);
-
   return (
-    <div className={styles.details__container} key={product.id}>
+    <div className={styles.details__container}>
       <Link href="/products">Back to products page</Link>
       <div className={styles.detailsItems__container}>
         <div className={styles.left__container}>
           <div className={styles.details__image}>
-            <img src={product.image} alt="" />
+            <img src={product?.image} alt="" key={product.id} />
           </div>
         </div>
-        <div className={styles.right__container}>
-          <h2>{product.name}</h2>
+        <div className={styles.right__container} key={product.id}>
+          <h2>{product?.name}</h2>
           <div className={styles.fillrating}>
-            {Array(product.rating)
+            {Array(product?.rating)
               .fill()
               .map((_, i) => (
-                <StarRateIcon style={{ fill: "#F7AB09" }} />
+                <StarRateIcon style={{ fill: "#F7AB09" }} key={i} />
               ))}
           </div>
-          <p>{product.description}</p>
+          <p>{product?.description}</p>
           <div className={styles.details}>
             <p>
-              <small>price:</small> ${product.price}
+              <small>price:</small> ${product?.price}
             </p>
             <button>
               <LocalMallIcon />

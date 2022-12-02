@@ -163,6 +163,12 @@
   margin-top: 20px;
 }
 
+@media screen and (max-width:952px) {
+  .detailsItems__container {
+    max-width: 90%;
+  }
+}
+
 
 
 
