@@ -11,10 +11,12 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 const Details = () => {
   const router = useRouter();
-  const { id } = router?.query;
-  const product = products.find((a) => a.id == id);
+  const { id } = router.query;
   const [liked, setLiked] = useState(false);
   const red = "purple";
+  const product = products.find((a) => a.id == id);
+  if (!router.isReady) return;
+
   return (
     <>
       <div className={styles.details__container}>
