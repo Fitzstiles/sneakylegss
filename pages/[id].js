@@ -14,10 +14,9 @@ const Details = () => {
   const router = useRouter();
   const { id } = router.query;
   const [liked, setLiked] = useState(false);
-  const red = "purple";
   const product = products.find((a) => a.id == id);
   if (!router.isReady) return;
-
+  const colors = product?.color;
   return (
     <>
       <Head>
@@ -57,8 +56,23 @@ const Details = () => {
                 <LocalShippingIcon />
                 free shipping
               </p>
-              <button>Cancel order</button>
             </section>
+            <div className={styles.color__section}>
+              <p>Available shoe colors</p>
+              <div className={styles.select__color}>
+                {colors?.map((color) => (
+                  <div
+                    style={{
+                      backgroundColor: `${color}`,
+                      width: 50,
+                      height: 50,
+                      borderRadius: "50%",
+                      cursor: "pointer",
+                    }}
+                  ></div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
         <section className={styles.final__section}>
@@ -69,6 +83,14 @@ const Details = () => {
           </p>
         </section>
       </div>
+
+      {/*
+      
+      
+     ********* Mobile View Design *******
+      
+      */}
+
       <div className={styles.mobileView__container}>
         <div className={styles.header__section}>
           <Link href="/products">
@@ -94,36 +116,27 @@ const Details = () => {
             )}
           </div>
         </div>
-        <p>Select Shoe color</p>
-        <div className={styles.select__color}>
-          <div
-            style={{
-              backgroundColor: `${red}`,
-              width: 50,
-              height: 50,
-              borderRadius: "50%",
-            }}
-          ></div>
-          <div
-            style={{
-              backgroundColor: `${red}`,
-              width: 50,
-              height: 50,
-              borderRadius: "50%",
-            }}
-          ></div>
-          <div
-            style={{
-              backgroundColor: `${red}`,
-              width: 50,
-              height: 50,
-              borderRadius: "50%",
-            }}
-          ></div>
+        <div className={styles.color__section}>
+          <p>Available shoe colors</p>
+          <div className={styles.select__color}>
+            {colors?.map((color) => (
+              <div
+                style={{
+                  backgroundColor: `${color}`,
+                  width: 30,
+                  height: 30,
+                  borderRadius: "50%",
+                }}
+              ></div>
+            ))}
+          </div>
         </div>
         <div className={styles.box}>
-          <button>Description</button>
-          <button>Comments</button>
+          <div>
+            <button>Description</button>
+            <button>Comments</button>
+          </div>
+
           <p>{product.description}</p>
         </div>
         <div className={styles.last__section}></div>
