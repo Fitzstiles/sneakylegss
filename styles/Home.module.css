@@ -231,6 +231,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
 }
 
 .select__color {
@@ -250,6 +251,18 @@
   margin: 20px 0;
 }
 
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons button {
+  outline: none;
+  border: none;
+  background-color: #C55E20;
+  color: white;
+  padding: 10px;
+  margin-right: 10px;
+}
 
 @media screen and (min-width:740px) {
   .mobileView__container {

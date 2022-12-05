@@ -60,7 +60,7 @@ const Details = () => {
             <div className={styles.color__section}>
               <p>Available shoe colors</p>
               <div className={styles.select__color}>
-                {colors?.map((color) => (
+                {colors?.map((color, i) => (
                   <div
                     style={{
                       backgroundColor: `${color}`,
@@ -69,6 +69,7 @@ const Details = () => {
                       borderRadius: "50%",
                       cursor: "pointer",
                     }}
+                    key={i}
                   ></div>
                 ))}
               </div>
@@ -97,13 +98,13 @@ const Details = () => {
             <ArrowBackIosNewIcon />
           </Link>
 
-          <p>{product.name}</p>
+          <p style={{ width: 200 }}>{product.name}</p>
         </div>
         <div className={styles.mobile__detailsImage}>
           <img src={product.image} alt="" />
         </div>
         <div className={styles.product__name}>
-          <p>{product.name}</p>
+          <p style={{ width: 200 }}>{product.name}</p>
           <div className={styles.heart__icon} onClick={() => setLiked(!liked)}>
             {liked ? (
               <FavoriteIcon
@@ -119,7 +120,7 @@ const Details = () => {
         <div className={styles.color__section}>
           <p>Available shoe colors</p>
           <div className={styles.select__color}>
-            {colors?.map((color) => (
+            {colors?.map((color, i) => (
               <div
                 style={{
                   backgroundColor: `${color}`,
@@ -127,12 +128,13 @@ const Details = () => {
                   height: 30,
                   borderRadius: "50%",
                 }}
+                key={i}
               ></div>
             ))}
           </div>
         </div>
         <div className={styles.box}>
-          <div>
+          <div className={styles.buttons}>
             <button>Description</button>
             <button>Comments</button>
           </div>

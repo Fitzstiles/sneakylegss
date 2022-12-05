@@ -21,7 +21,7 @@ const products = [
     rating: 5,
     description:
       "Beatuiful shoe Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero nesciunt et repellat quas, porro nihil sequi maxime possimus error tenetur in excepturi odio debitis molestias doloremque perferendis, numquam natus!",
-    color: ["#7b1a2b", "#f0aeba", "#53494b"],
+    color: ["#7b1a2b", "#f0aeba", "#53494b", "lightcoral"],
   },
   {
     id: 3,
