@@ -55,9 +55,9 @@ const products = [
   },
   {
     id: 6,
-    name: "Nike 2021 tennis shoes",
+    name: "Nike Air Force 1",
     image:
-      "https://i.pinimg.com/236x/b8/da/5f/b8da5f6b2f88e455c5f40fb95e04287d.jpg",
+      "https://ph-live-05.slatic.net/p/79de3112198af66fee170f596910fbb7.jpg_720x720q80.jpg_.webp",
     price: 200,
     gender: "f",
     rating: 3,

@@ -6,7 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const Header = () => {
   const [isOpen, setIsopen] = useState(false);
-  const cart = 20;
+  const cart = 0;
   const handleclosednav = () => setIsopen(false);
   return (
     <section className={styles.header__container}>
@@ -19,15 +19,15 @@ const Header = () => {
           <small>sneakylegs</small>
         </div>
       </Link>
-        <div className={styles.mobile__input}>
-          <input type="text" placeholder="Search" />
-          <SearchIcon />
-        </div>
-        
+      <div className={styles.mobile__input}>
+        <input type="text" placeholder="Search" />
+        <SearchIcon />
+      </div>
+
       <div className={styles.mobile__cart}>
-          <ShoppingCartOutlinedIcon />
-          {cart >= 1 && <p>{cart}</p>}
-        </div>
+        <ShoppingCartOutlinedIcon />
+        {cart >= 1 && <p>{cart}</p>}
+      </div>
       <section
         className={`${styles.header__links} ${isOpen && styles.open}`}
         onClick={handleclosednav}

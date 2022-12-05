@@ -6,7 +6,7 @@ const Categories = () => {
     <div className={styles.categories__container} data-aos="fade-up">
       <h2>CATEGORIES</h2>
       <div data-aos="fade-up" className={styles.container}>
-        <Link href="/WomenSneakers">
+        <Link href="/womensneakers">
           <div className={styles.image__container}>
             <img
               src="https://images.unsplash.com/photo-1588117305388-c2631a279f82?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNuZWFrZXJzJTIwd29tZW58ZW58MHx8MHx8&w=1000&q=80"

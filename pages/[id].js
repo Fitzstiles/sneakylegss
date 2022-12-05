@@ -79,8 +79,8 @@ const Details = () => {
         <section className={styles.final__section}>
           <h1>Delivered to your Door</h1>
           <p>
-            Your product will be deliverd to the specified location at the
-            stipulated time with free shipping on all purchases
+            Your product will be delivered to the specified location ,right on
+            time with free shipping on all purchases
           </p>
         </section>
       </div>

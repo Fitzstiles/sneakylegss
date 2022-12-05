@@ -129,6 +129,10 @@
   align-items: center;
 }
 
+.fillrating {
+  margin: 20px 0;
+}
+
 .right__container button:hover {
   background-color: #C55E20;
   color: white;
