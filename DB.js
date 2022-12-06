@@ -1,14 +1,14 @@
 const products = [
   {
     id: 1,
-    name: "Men's Sports Running Shoes -Multi Color",
+    name: "Mens Sports Running Shoes -Multi Color",
     image:
       "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/26/006249/2.jpg?0364",
     price: 600,
     gender: "m",
     rating: 5,
     description:
-      "The Nike Men's Sports Running Shoes continues to help keep you running.A refreshed Flyknit upper uses Flywire technology for support and breathability where you need it.Higher foam provides soft responsiveness and long-lasting comfort.It's still one of our most tested shoes, designed to help you feel the potential when your foot hits the pavement.",
+      "The Nike Mens Sports Running Shoes continues to help keep you running.A refreshed Flyknit upper uses Flywire technology for support and breathability where you need it.Higher foam provides soft responsiveness and long-lasting comfort.It is still one of our most tested shoes, designed to help you feel the potential when your foot hits the pavement.",
     color: ["orange", "gray", "black", "pink"],
   },
   {
@@ -44,7 +44,7 @@ const products = [
     gender: "m",
     rating: 2,
     description:
-      "Fashion Front Lace Up Leisure Sneakers continues to help keep you running.A refreshed Flyknit upper uses Flywire technology for support and breathability where you need it.Higher foam provides soft responsiveness and long-lasting comfort.It's still one of our most tested shoes, designed to help you feel the potential when your foot hits the pavement.",
+      "Fashion Front Lace Up Leisure Sneakers continues to help keep you running.A refreshed Flyknit upper uses Flywire technology for support and breathability where you need it.Higher foam provides soft responsiveness and long-lasting comfort.It is still one of our most tested shoes, designed to help you feel the potential when your foot hits the pavement.",
     color: ["black", "green", "purple"],
   },
   {
@@ -56,7 +56,7 @@ const products = [
     gender: "f",
     rating: 5,
     description:
-      "Stand out from the crowd in this amazing and attractive high quality shoe. It is made with the buyer's comfort and elegance in mind. This is the shoe to go for whenever u are thinking of getting that perfect finishing touch for your outfit. It comes in different sizes. It is designed for comfort and uniqueness.",
+      "Stand out from the crowd in this amazing and attractive high quality shoe. It is made with the buyer is comfort and elegance in mind. This is the shoe to go for whenever u are thinking of getting that perfect finishing touch for your outfit. It comes in different sizes. It is designed for comfort and uniqueness.",
     color: ["black", "orange", "purple"],
   },
   {
@@ -68,7 +68,7 @@ const products = [
     gender: "f",
     rating: 3,
     description:
-      "Socviis cares deeply about providing you with comfort, fit and style that will stand up to countless daily activities. That's why the brand continues to develop footwear that provides stability and support. The company's innovative designs are engineered with top-quality, The uppers are carefully constructed to fit, perform and look great, and the overall result is well-thought-out footwear that contributes to happy.",
+      "Socviis cares deeply about providing you with comfort, fit and style that will stand up to countless daily activities. That is why the brand continues to develop footwear that provides stability and support. The company is innovative designs are engineered with top-quality, The uppers are carefully constructed to fit, perform and look great, and the overall result is well-thought-out footwear that contributes to happy.",
     color: ["#bb1ae4", "#1ae4b1", "#313534", "#c3d618"],
   },
   {
@@ -91,7 +91,7 @@ const products = [
     gender: "f",
     rating: 5,
     description:
-      "Stand out from the crowd in this amazing and attractive high quality shoe. It is made with the buyer's comfort and elegance in mind. This is the shoe to go for whenever u are thinking of getting that perfect finishing touch for your outfit. It comes in different sizes. It is designed for comfort and uniqueness.",
+      "Stand out from the crowd in this amazing and attractive high quality shoe. It is made with the buyer is comfort and elegance in mind. This is the shoe to go for whenever u are thinking of getting that perfect finishing touch for your outfit. It comes in different sizes. It is designed for comfort and uniqueness.",
     color: ["magenta", "purple", "blue", "maroon"],
   },
   {
@@ -103,7 +103,7 @@ const products = [
     gender: "f",
     rating: 5,
     description:
-      "Stand out from the crowd in this amazing and attractive high quality shoe. It is made with the buyer's comfort and elegance in mind. This is the shoe to go for whenever u are thinking of getting that perfect finishing touch for your outfit. It comes in different sizes. It is designed for comfort and uniqueness.",
+      "Stand out from the crowd in this amazing and attractive high quality shoe. It is made with the buyer is comfort and elegance in mind. This is the shoe to go for whenever u are thinking of getting that perfect finishing touch for your outfit. It comes in different sizes. It is designed for comfort and uniqueness.",
     color: ["black", "orange", "purple"],
   },
   {
@@ -171,7 +171,7 @@ const products = [
     gender: "m",
     rating: 5,
     description:
-      "Take your workout to the next level with these lightweight and supremely comfortable sneakers, which feature the label's typical commitment to top-quality design and engineering",
+      "Take your workout to the next level with these lightweight and supremely comfortable sneakers, which feature the label is typical commitment to top-quality design and engineering",
     color: ["#e48595", "#c71836", "red", "purple"],
   },
   {
