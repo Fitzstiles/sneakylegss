@@ -135,7 +135,6 @@
         transition: .45s;
         z-index: 5;
         padding-right: 0;
-        border-top: 1px solid #c55e20;
     }
 
     .header__links a {

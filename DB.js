@@ -8,8 +8,8 @@ const products = [
     gender: "m",
     rating: 5,
     description:
-      "Beatuiful shoe Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero nesciunt et repellat quas, porro nihil sequi maxime possimus error tenetur in excepturi odio debitis molestias doloremque perferendis, numquam natus!",
-    color: ["orange", "gray", "black"],
+      "The Nike Men's Sports Running Shoes continues to help keep you running.A refreshed Flyknit upper uses Flywire technology for support and breathability where you need it.Higher foam provides soft responsiveness and long-lasting comfort.It's still one of our most tested shoes, designed to help you feel the potential when your foot hits the pavement.",
+    color: ["orange", "gray", "black", "pink"],
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const products = [
     gender: "m",
     rating: 5,
     description:
-      "Beatuiful shoe Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero nesciunt et repellat quas, porro nihil sequi maxime possimus error tenetur in excepturi odio debitis molestias doloremque perferendis, numquam natus!",
+      "Your kid works hard and plays even harder, so get him a sneaker like the Luca that can easily keep up. Athletic features and plenty of styles mean they’ll never want to take them off!",
     color: ["#7b1a2b", "#f0aeba", "#53494b", "lightcoral"],
   },
   {
@@ -31,7 +31,9 @@ const products = [
     price: 200,
     gender: "m",
     rating: 3,
-    description: "Beatuiful shoe",
+    description:
+      "This Nike Air unisex sneaker prepares your leg, mind and soul for a great day ahead. This product is from a trusted brand that scores well on several reviews from customers. Available in different sizes",
+    color: ["#7b1a2b", "#f1b7c2", "#4d4647", "#bb1ae4", "pink"],
   },
   {
     id: 4,
@@ -41,7 +43,9 @@ const products = [
     price: 100,
     gender: "m",
     rating: 2,
-    description: "Beatuiful shoe",
+    description:
+      "Fashion Front Lace Up Leisure Sneakers continues to help keep you running.A refreshed Flyknit upper uses Flywire technology for support and breathability where you need it.Higher foam provides soft responsiveness and long-lasting comfort.It's still one of our most tested shoes, designed to help you feel the potential when your foot hits the pavement.",
+    color: ["black", "green", "purple"],
   },
   {
     id: 5,
@@ -51,7 +55,9 @@ const products = [
     price: 500,
     gender: "f",
     rating: 5,
-    description: "Beatuiful shoe",
+    description:
+      "Stand out from the crowd in this amazing and attractive high quality shoe. It is made with the buyer's comfort and elegance in mind. This is the shoe to go for whenever u are thinking of getting that perfect finishing touch for your outfit. It comes in different sizes. It is designed for comfort and uniqueness.",
+    color: ["black", "orange", "purple"],
   },
   {
     id: 6,
@@ -61,7 +67,9 @@ const products = [
     price: 200,
     gender: "f",
     rating: 3,
-    description: "Beatuiful shoe",
+    description:
+      "Socviis cares deeply about providing you with comfort, fit and style that will stand up to countless daily activities. That's why the brand continues to develop footwear that provides stability and support. The company's innovative designs are engineered with top-quality, The uppers are carefully constructed to fit, perform and look great, and the overall result is well-thought-out footwear that contributes to happy.",
+    color: ["#bb1ae4", "#1ae4b1", "#313534", "#c3d618"],
   },
   {
     id: 7,
@@ -72,6 +80,7 @@ const products = [
     gender: "m",
     rating: 5,
     description: "Beatuiful shoe",
+    color: ["green", "purple", "blue", "maroon"],
   },
   {
     id: 8,
@@ -81,7 +90,9 @@ const products = [
     price: 500,
     gender: "f",
     rating: 5,
-    description: "Beatuiful shoe",
+    description:
+      "Stand out from the crowd in this amazing and attractive high quality shoe. It is made with the buyer's comfort and elegance in mind. This is the shoe to go for whenever u are thinking of getting that perfect finishing touch for your outfit. It comes in different sizes. It is designed for comfort and uniqueness.",
+    color: ["magenta", "purple", "blue", "maroon"],
   },
   {
     id: 9,
@@ -91,7 +102,9 @@ const products = [
     price: 200,
     gender: "f",
     rating: 5,
-    description: "Beatuiful shoe",
+    description:
+      "Stand out from the crowd in this amazing and attractive high quality shoe. It is made with the buyer's comfort and elegance in mind. This is the shoe to go for whenever u are thinking of getting that perfect finishing touch for your outfit. It comes in different sizes. It is designed for comfort and uniqueness.",
+    color: ["black", "orange", "purple"],
   },
   {
     id: 10,
@@ -102,6 +115,7 @@ const products = [
     gender: "f",
     rating: 3,
     description: "Beatuiful shoe",
+    color: ["green", "purple", "blue", "maroon"],
   },
   {
     id: 11,
@@ -111,7 +125,9 @@ const products = [
     price: 400,
     gender: "f",
     rating: 5,
-    description: "Beatuiful shoe",
+    description:
+      ".The Chunky sneakers can dress with every outfits,such as tight jeans party suits, shorts, or dress, fashionable and unique looking, popular trendy, great for party dating travel seas nightclub school day movie office shopping walking motorcycle riding or any outdoor activities in fall and winter season.The upper and sole of chunky sneakers is using lightweight material ,make the shoes more comfortable to walking",
+    color: ["black", "green", "purple"],
   },
   {
     id: 12,
@@ -120,7 +136,9 @@ const products = [
     price: 300,
     gender: "f",
     rating: 4,
-    description: "Beatuiful shoe",
+    description:
+      "ZOVIM introduce a Stylish and dapper pair of sneakers. These sports sneakers are made from the best on the outside. It features a comfortable sole. These pair of sneakers have been designed as per the latest trends in footwear fashion",
+    color: ["#970f97", "#858ee4", "#e48595", "green", "yellow"],
   },
   {
     id: 13,
@@ -131,6 +149,7 @@ const products = [
     gender: "m",
     rating: 5,
     description: "Beatuiful shoe",
+    color: ["red", "blue", "green", "maroon"],
   },
   {
     id: 14,
@@ -141,6 +160,7 @@ const products = [
     gender: "m",
     rating: 4,
     description: "Beatuiful shoe",
+    color: ["#970f97", "#858ee4", "#e48595"],
   },
   {
     id: 15,
@@ -150,7 +170,9 @@ const products = [
     price: 400,
     gender: "m",
     rating: 5,
-    description: "Beatuiful shoe",
+    description:
+      "Take your workout to the next level with these lightweight and supremely comfortable sneakers, which feature the label's typical commitment to top-quality design and engineering",
+    color: ["#e48595", "#c71836", "red", "purple"],
   },
   {
     id: 16,
@@ -160,7 +182,9 @@ const products = [
     price: 200,
     gender: "f",
     rating: 3,
-    description: "Beatuiful shoe",
+    description:
+      "White solid canvas shoes are all classics styles and good choice for back to school gift,that can be easily paired with any casual clothes,and suitable for all year round.",
+    color: ["#e48595", "#c71836", "red", "purple"],
   },
   {
     id: 17,
@@ -171,6 +195,7 @@ const products = [
     gender: "f",
     rating: 5,
     description: "Beatuiful shoe",
+    color: ["black", "green", "purple"],
   },
   {
     id: 18,
@@ -180,7 +205,9 @@ const products = [
     price: 400,
     gender: "m",
     rating: 5,
-    description: "Beatuiful shoe",
+    description:
+      "Removable leather-covered inlay sole offers extra width when removed. Lightweight sole provides cushioning and flexibility, using innovative ECCO FLUIDFORM Direct Comfort Technology",
+    color: ["#970f97", "#858ee4", "#e48595"],
   },
 ];
 export default products;
