@@ -11,6 +11,7 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import Head from "next/head";
 const Details = () => {
+  const [productNum, setproductNum] = useState(1);
   const router = useRouter();
   const { id } = router.query;
   const [liked, setLiked] = useState(false);
@@ -143,7 +144,6 @@ const Details = () => {
         <div className={styles.box}>
           <div className={styles.buttons}>
             <button>Description</button>
-            <button>Comments</button>
           </div>
 
           <p>{product.description}</p>

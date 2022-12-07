@@ -24,7 +24,8 @@
 .productCard__image p {
     position: absolute;
     bottom: 0;
-    left: 5px;
+    left: 10px;
+    bottom: 10px;
     color: white;
 }
 
@@ -73,11 +74,12 @@
 }
 
 .productcard__name {
-    max-width: 150px;
-    height: 80px;
+    max-width: 200px;
+    height: 40px;
+    margin: 10px 0;
 }
 
-.rating {
+.fillrating {
     display: flex;
     padding: 20px 0;
 }

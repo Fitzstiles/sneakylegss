@@ -1,9 +1,11 @@
-const { useContext, useReducer } = require("react");
-import reducer, { initialState } from "./reducer";
+import { createContext, useReducer, useContext } from "react";
 
-const stateContext = useContext(initialState);
-console.log(initialState);
+export const StateContext = createContext();
 
-const stateContextProvider = () => {
-  const [state, dispatch] = useReducer(initialState, reducer);
-};
+export const StateProvider = ({ reducer, initialState, children }) => (
+  <StateContext.Provider value={useReducer(reducer, initialState)}>
+    {children}
+  </StateContext.Provider>
+);
+
+export const useStateValue = () => useContext(StateContext);

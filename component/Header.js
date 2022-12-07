@@ -3,10 +3,11 @@ import { useState } from "react";
 import Link from "next/link";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import SearchIcon from "@mui/icons-material/Search";
+import { useStateValue } from "../globalStore/ContextProvider";
 
 const Header = () => {
+  const [{ cart }] = useStateValue();
   const [isOpen, setIsopen] = useState(false);
-  const cart = 0;
   const handleclosednav = () => setIsopen(false);
   return (
     <section className={styles.header__container}>
@@ -25,8 +26,10 @@ const Header = () => {
       </div>
 
       <div className={styles.mobile__cart}>
-        <ShoppingCartOutlinedIcon />
-        {cart >= 1 && <p>{cart}</p>}
+        <Link href="/cart">
+          <ShoppingCartOutlinedIcon />
+          {cart.length >= 1 && <p>{cart.length}</p>}
+        </Link>
       </div>
       <section
         className={`${styles.header__links} ${isOpen && styles.open}`}
@@ -41,8 +44,10 @@ const Header = () => {
           <SearchIcon />
         </div>
         <div className={styles.cart}>
-          <ShoppingCartOutlinedIcon />
-          {cart >= 1 && <p>{cart}</p>}
+          <Link href="/cart">
+            <ShoppingCartOutlinedIcon />
+            {cart.length >= 1 && <p>{cart.length}</p>}
+          </Link>
         </div>
 
         <div className={styles.icons}>

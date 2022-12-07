@@ -405,4 +405,18 @@
   color: #C55E20;
 }
 
+.shoenum {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #C15B33;
+  padding: 5px 10px;
+}
+
+.shoenum button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
 /* Login page styling ends */

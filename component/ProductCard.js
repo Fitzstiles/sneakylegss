@@ -4,15 +4,17 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import styles from "../component/Product.module.css";
 import Link from "next/link";
+import { useStateValue } from "../globalStore/ContextProvider";
 
 const ProductCard = ({ product }) => {
+  const [state, dispatch] = useStateValue();
   const [liked, setLiked] = useState(false);
-  //   const addTocart = () => {
-  //     dispatch({
-  //       type: "ADD_TO_CART",
-  //       payload: product,
-  //     });
-  //   };
+  const addTocart = () => {
+    dispatch({
+      type: "ADD_TO_CART",
+      payload: product,
+    });
+  };
 
   return (
     <div data-aos="fade-up" className={styles.productCard__wrapper}>
@@ -42,7 +44,7 @@ const ProductCard = ({ product }) => {
           <h4>{product.name}</h4>
         </div>
 
-        <button>Add to cart</button>
+        <button onClick={addTocart}>Add to cart</button>
         <div className={styles.fillrating}>
           {Array(product.rating)
             .fill()
