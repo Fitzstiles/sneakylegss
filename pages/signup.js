@@ -6,6 +6,7 @@ import Link from "next/link";
 import Head from "next/head";
 const SignUp = () => {
   const [passwordShown, setPasswordShown] = useState(false);
+  const [password, setPassword] = useState("");
   const togglePassword = () => {
     // When the handler is invoked
     // inverse the boolean state of passwordShown
@@ -21,7 +22,7 @@ const SignUp = () => {
       <div className={styles.login__container}>
         <div className={styles.bg__img}>
           <img
-            src="https://images.unsplash.com/photo-1612821745127-53855be9cbd1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            src="https://images.unsplash.com/photo-1603787081207-362bcef7c144?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80"
             alt=""
           />
         </div>
@@ -37,7 +38,7 @@ const SignUp = () => {
               <p>Password?</p>
               <input
                 type={passwordShown ? "text" : "password"}
-                onChange={(e) => setpassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}
               />
               {passwordShown ? (
                 <VisibilityOffIcon onClick={togglePassword} />

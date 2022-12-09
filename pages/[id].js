@@ -11,7 +11,6 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import Head from "next/head";
 const Details = () => {
-  const [productNum, setproductNum] = useState(1);
   const router = useRouter();
   const { id } = router.query;
   const [liked, setLiked] = useState(false);

@@ -306,11 +306,9 @@
 /* Login page styling */
 
 .login__container {
-  width: 100%;
   position: relative;
   overflow: hidden;
   height: 100vh;
-  /* background-color: rgba(0, 0, 0, 0.6); */
   color: white;
 }
 
@@ -337,9 +335,6 @@
 .Signin {
   background-color: rgba(197, 95, 32, 0.4);
   height: 100%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
   padding-left: 20px;
 }
 
@@ -362,16 +357,11 @@
   border: none;
   outline: none;
   border-bottom: 1px solid white;
-  width: 90%;
+  width: 95%;
   padding-top: 5px;
   background: none;
   color: white;
 }
-
-/* 
-.email input {
-  margin-bottom: 40px;
-} */
 
 .password {
   position: relative;
@@ -419,4 +409,105 @@
   background: transparent;
 }
 
+@media screen and (min-width:1000px) {
+  .login__container {
+    background-color: black;
+  }
+
+  .password svg {
+    right: 50px;
+  }
+
+  .Signin {
+    max-width: 50%;
+    margin: auto;
+  }
+
+  .signin__details {
+    margin-top: 0px;
+  }
+}
+
+
 /* Login page styling ends */
+
+
+
+
+/* styling the cart page */
+.positioning {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.cart__container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.cart__info {
+  width: 100%;
+}
+
+.cart__images {
+  width: 100px;
+  height: 100px;
+}
+
+.cart__images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.options {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.options :nth-child(1) {
+  font-size: 20px;
+}
+
+.options button {
+  border: 1px solid #C15B33;
+  background: transparent;
+  cursor: pointer;
+}
+
+.options svg {
+  color: #C15B33;
+  cursor: pointer;
+}
+
+.positioning a {
+  text-transform: uppercase;
+  background-color: #C15B33;
+  color: white;
+  font-weight: 400;
+  padding: 10px 40px;
+  border-radius: 5px;
+}
+
+.init {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.init h1 {
+  color: #C55E20;
+}
+
+@media screen and (min-width:700px) {
+  .positioning {
+    max-width: 50%;
+    margin: 50px auto;
+  }
+}
+
+/* styling the cart page ends */

@@ -1,6 +1,3 @@
-const uri =
-  "mongodb+srv://austin:password@cluster0.akkx3mk.mongodb.net/cluster0?retryWrites=true&w=majority";
-
 const products = [
   {
     id: 1,
