@@ -23,7 +23,7 @@ const Carts = () => {
           </Link>
         </div>
       ) : (
-        <div className="cart__items">
+        <div className={styles.cart__items}>
           <h2>Your cart</h2>
           <div className="cart__container">
             <div>
@@ -32,7 +32,7 @@ const Carts = () => {
               ))}
             </div>
 
-            <div className="right__cart">
+            <div className={styles.proceed__button}>
               <h4>Total Items ({cart?.length} items)</h4>
               <h3>Cart Total:</h3>
               <span>{cart.price}</span>
