@@ -10,13 +10,21 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import Head from "next/head";
+import { useStateValue } from "../globalStore/ContextProvider";
 const Details = () => {
+  const [state, dispatch] = useStateValue();
   const router = useRouter();
   const { id } = router.query;
   const [liked, setLiked] = useState(false);
   const product = products.find((a) => a.id == id);
   if (!router.isReady) return;
   const colors = product?.color;
+  const addTocart = () => {
+    dispatch({
+      type: "ADD_TO_CART",
+      payload: product,
+    });
+  };
   return (
     <>
       <Head>
@@ -46,7 +54,7 @@ const Details = () => {
               <p>
                 <small>price:</small> ${product?.price}
               </p>
-              <button>
+              <button onClick={addTocart}>
                 <LocalMallIcon />
                 Add to cart
               </button>
@@ -134,7 +142,7 @@ const Details = () => {
           </div>
         </div>
         <div className={styles.add__cart}>
-          <button>
+          <button onClick={addTocart}>
             <LocalMallIcon />
             Add to cart
           </button>

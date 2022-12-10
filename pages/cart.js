@@ -6,6 +6,8 @@ import styles from "../styles/Home.module.css";
 
 const Carts = () => {
   const [{ cart }, dispatch] = useStateValue();
+  const price = cart.map((a) => a.price);
+  const totalPrice = price.reduce((partialSum, a) => partialSum + a, 0);
 
   return (
     <>
@@ -34,10 +36,9 @@ const Carts = () => {
 
             <div className={styles.proceed__button}>
               <h4>Total Items ({cart?.length} items)</h4>
-              <h3>Cart Total:</h3>
-              <span>{cart.price}</span>
+              <p>Cart Total:${totalPrice}</p>
               <div className="proceed">
-                <Link href="/login">Proceed</Link>
+                <Link href="/signup">Proceed</Link>
               </div>
             </div>
           </div>
