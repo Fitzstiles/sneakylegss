@@ -15,6 +15,12 @@ const ProductCard = ({ product }) => {
       payload: product,
     });
   };
+  const removeFromCart = () => {
+    dispatch({
+      type: "REMOVE_FROM_CART",
+      id: item.id,
+    });
+  };
 
   return (
     <div data-aos="fade-up" className={styles.productCard__wrapper}>

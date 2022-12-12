@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import products from "../DB";
+// import products from "../DB";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
@@ -11,11 +11,24 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { useState } from "react";
 import Head from "next/head";
 import { useStateValue } from "../globalStore/ContextProvider";
-const Details = () => {
+import { db } from "../config/firebase";
+import { doc, getDoc } from "firebase/firestore";
+
+export async function getServerSideProps() {
+  const docRef = doc(db, "sneakylegs", "products");
+  const docSnap = await getDoc(docRef);
+  const data = docSnap.data();
+  const dbData = data.products;
+  return {
+    props: { products: dbData },
+  };
+}
+
+const Details = ({ products }) => {
   const [state, dispatch] = useStateValue();
+  const [liked, setLiked] = useState(false);
   const router = useRouter();
   const { id } = router.query;
-  const [liked, setLiked] = useState(false);
   const product = products.find((a) => a.id == id);
   if (!router.isReady) return;
   const colors = product?.color;

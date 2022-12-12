@@ -23,5 +23,3 @@ export default function Home() {
     </div>
   );
 }
-
-// https://wallpaper.dog/large/17177044.jpg
