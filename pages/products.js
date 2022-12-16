@@ -13,6 +13,7 @@ export async function getServerSideProps() {
     props: { products: dbData },
   };
 }
+
 const Products = ({ products }) => {
   return (
     <>
