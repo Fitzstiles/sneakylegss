@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useStateValue } from "../globalStore/ContextProvider";
 
 const ProductCard = ({ product }) => {
-  const [state, dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
   const [liked, setLiked] = useState(false);
   const addTocart = () => {
     dispatch({
@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
   const removeFromCart = () => {
     dispatch({
       type: "REMOVE_FROM_CART",
-      id: item.id,
+      id: product.id,
     });
   };
 
@@ -50,7 +50,12 @@ const ProductCard = ({ product }) => {
           <h4>{product.name}</h4>
         </div>
 
-        <button onClick={addTocart}>Add to cart</button>
+        {cart.some((p) => p.id === product.id) ? (
+          <button onClick={removeFromCart}>Remove from cart</button>
+        ) : (
+          <button onClick={addTocart}>Add to cart</button>
+        )}
+
         <div className={styles.fillrating}>
           {Array(product.rating)
             .fill()

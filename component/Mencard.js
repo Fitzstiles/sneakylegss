@@ -15,7 +15,7 @@ const Women = ({ filteredPerson }) => {
     });
   };
   return (
-    <div className={styles.productCard__wrapper}>
+    <div data-aos="fade-up" className={styles.productCard__wrapper}>
       <div className={styles.productCard__image}>
         <Link href={`${filteredPerson.id}`}>
           <img src={filteredPerson.image} alt="" />
