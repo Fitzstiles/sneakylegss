@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 export default function Flutter({ email, name }) {
   const [{ total }] = useStateValue();
   const [{ cart }] = useStateValue();
-  const reason = cart.map((a) => console.log(a.name));
+  const reason = cart?.map((a) => a.name);
   const router = useRouter();
 
   const config = {
@@ -17,7 +17,7 @@ export default function Flutter({ email, name }) {
     payment_options: "card,mobilemoney,ussd",
     customer: {
       email: email,
-      name: email,
+      name: name,
     },
     customizations: {
       title: "My store",
@@ -30,7 +30,6 @@ export default function Flutter({ email, name }) {
     ...config,
     text: "Make Payments",
     callback: (response) => {
-      console.log(response);
       const success = response.status === "successful";
       if (success) {
         router.push("/products");
