@@ -1,6 +1,6 @@
 export const initialState = {
   cart: [],
-  user: null,
+  total: null,
 };
 
 const reducer = (state, action) => {
@@ -10,6 +10,13 @@ const reducer = (state, action) => {
         ...state,
         cart: [...state.cart, action.payload],
       };
+
+    case "UPDATE_PRICE": {
+      return {
+        ...state,
+        total: action.payload,
+      };
+    }
 
     case "REMOVE_FROM_CART":
       const index = state.cart.findIndex(

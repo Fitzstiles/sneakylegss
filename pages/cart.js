@@ -8,6 +8,12 @@ const Carts = () => {
   const [{ cart }, dispatch] = useStateValue();
   const price = cart.map((a) => a.price);
   const totalPrice = price.reduce((partialSum, a) => partialSum + a, 0);
+  const updatePrice = () => {
+    dispatch({
+      type: "UPDATE_PRICE",
+      payload: totalPrice,
+    });
+  };
 
   return (
     <>
@@ -36,9 +42,11 @@ const Carts = () => {
 
             <div className={styles.proceed__button}>
               <h4>Total Items ({cart?.length} items)</h4>
-              <p>Cart Total:${totalPrice}</p>
+              <p>Cart Total:₦‎{totalPrice}</p>
               <div className="proceed">
-                <Link href="/signup">Proceed</Link>
+                <Link href="/signup" onClick={updatePrice}>
+                  Proceed
+                </Link>
               </div>
             </div>
           </div>

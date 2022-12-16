@@ -1,9 +1,19 @@
 import Head from "next/head";
 import styles from "../component/Product.module.css";
-import Womencard from "../component/Womencard";
-import products from "../DB";
+import Women from "../component/Womencard";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../config/firebase";
 
-const WomenSneakers = () => {
+export async function getServerSideProps() {
+  const docRef = doc(db, "sneakylegs", "products");
+  const docSnap = await getDoc(docRef);
+  const data = docSnap.data();
+  const dbData = data.products;
+  return {
+    props: { products: dbData },
+  };
+}
+const WomenSneakers = ({ products }) => {
   return (
     <>
       <Head>
@@ -15,10 +25,7 @@ const WomenSneakers = () => {
         {products
           .filter((product) => product.gender === "f")
           .map((filteredPerson) => (
-            <Womencard
-              key={filteredPerson.id}
-              filteredPerson={filteredPerson}
-            />
+            <Women key={filteredPerson.id} filteredPerson={filteredPerson} />
           ))}
       </div>
     </>

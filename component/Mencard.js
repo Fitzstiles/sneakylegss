@@ -28,7 +28,7 @@ const Women = ({ filteredPerson }) => {
           )}
         </div>
         <p>
-          <small style={{ color: "white" }}>$</small>
+          <small style={{ color: "white" }}>₦‎</small>
           {filteredPerson.price}
         </p>
       </div>

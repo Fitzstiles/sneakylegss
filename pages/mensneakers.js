@@ -1,8 +1,19 @@
-import products from "../DB";
 import Mencard from "../component/Mencard";
 import styles from "../component/Product.module.css";
 import Head from "next/head";
-const Mensneakers = () => {
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../config/firebase";
+
+export async function getServerSideProps() {
+  const docRef = doc(db, "sneakylegs", "products");
+  const docSnap = await getDoc(docRef);
+  const data = docSnap.data();
+  const dbData = data.products;
+  return {
+    props: { products: dbData },
+  };
+}
+const Mensneakers = ({ products }) => {
   return (
     <>
       <Head>

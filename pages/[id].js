@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-// import products from "../DB";
 import StarRateIcon from "@mui/icons-material/StarRate";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
@@ -65,7 +64,7 @@ const Details = ({ products }) => {
             <p>{product?.description}</p>
             <div className={styles.details}>
               <p>
-                <small>price:</small> ${product?.price}
+                <small>price:</small> ₦‎{product?.price}
               </p>
               <button onClick={addTocart}>
                 <LocalMallIcon />

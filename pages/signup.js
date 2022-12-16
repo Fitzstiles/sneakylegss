@@ -1,17 +1,12 @@
 import styles from "../styles/Home.module.css";
-import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
-import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import { useState } from "react";
-import Link from "next/link";
 import Head from "next/head";
+import Flutter from "../config/Flutter";
+
 const SignUp = () => {
-  const [passwordShown, setPasswordShown] = useState(false);
-  const [password, setPassword] = useState("");
-  const togglePassword = () => {
-    // When the handler is invoked
-    // inverse the boolean state of passwordShown
-    setPasswordShown(!passwordShown);
-  };
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+
   return (
     <>
       <Head>
@@ -26,32 +21,19 @@ const SignUp = () => {
             alt=""
           />
         </div>
-        <h1>Sign Up</h1>
+        <h1></h1>
         <div className={styles.Signin}>
           <div className={styles.signin__details}>
-            <p>Enter your credentials to Sign in</p>
+            <p>Enter your credentials to make payments</p>
             <div className={styles.email}>
               <p>Email address</p>
-              <input type="email" />
+              <input type="email" onChange={(e) => setEmail(e.target.value)} />
             </div>
-            <div className={styles.password}>
-              <p>Password?</p>
-              <input
-                type={passwordShown ? "text" : "password"}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              {passwordShown ? (
-                <VisibilityOffIcon onClick={togglePassword} />
-              ) : (
-                <RemoveRedEyeOutlinedIcon onClick={togglePassword} />
-              )}
+            <div className={styles.email}>
+              <p>Name</p>
+              <input type="text" onChange={(e) => setName(e.target.value)} />
             </div>
-            <div className={styles.button__section}>
-              <button>Sign up</button>
-              <p>
-                already have an account? <Link href="/login">Sign in</Link>
-              </p>
-            </div>
+            <Flutter email={email} name={name} />
           </div>
         </div>
       </div>

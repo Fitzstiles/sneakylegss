@@ -41,7 +41,7 @@ const ProductCard = ({ product }) => {
         </div>
 
         <p>
-          <small style={{ color: "white" }}>$</small>
+          <small style={{ color: "white" }}>₦‎</small>
           {product.price}
         </p>
       </div>
