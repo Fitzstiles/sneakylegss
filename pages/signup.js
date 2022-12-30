@@ -1,7 +1,7 @@
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import Head from "next/head";
-import Flutter from "../config/Flutter";
+import Link from "next/link";
 
 const SignUp = () => {
   const [email, setEmail] = useState("");
@@ -33,7 +33,12 @@ const SignUp = () => {
               <p>Name</p>
               <input type="text" onChange={(e) => setName(e.target.value)} />
             </div>
-            <Flutter email={email} name={name} />
+          </div>
+          <div className={styles.button__section}>
+            <button>Sign in</button>
+            <p>
+              Already have an account? <Link href="/login">Login</Link>
+            </p>
           </div>
         </div>
       </div>
